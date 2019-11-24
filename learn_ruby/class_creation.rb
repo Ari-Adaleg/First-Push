@@ -105,3 +105,43 @@ puts school.getWindow
 puts school.getPeople
 school.addPeople
 puts school.getPeople
+
+
+
+####################
+#IN ADDITION TO THE ASSIGNEMENT
+####################
+
+class CocaCola
+	def initialize(price, ml, amt_ingr)
+		@price = price
+		@ml = ml
+		@amt_ingr = amt_ingr
+		@location = "Canada"
+		@hammer = "Safe"
+	end
+
+	def getPrice
+		return @price
+	end
+
+	def getMl
+		return @ml
+	end
+
+	def getAmt_ingr
+		return @amt_ingr
+	end
+
+	def setLocation(newLocation)
+		@location = newLocation
+	end
+
+	def setHammer(newHammer)
+		@hammer = newHammer
+	end
+end
+
+can = CocaCola.new(1.25, 355, 15)
+
+puts can.setHammer("EXPLOSION!!")
